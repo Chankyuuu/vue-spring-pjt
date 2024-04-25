@@ -59,6 +59,12 @@ public class WorkController {
         workService.updateWork(params); 
         return null ; 
     }
+
+    @GetMapping("/jenkins")
+    public String debugMsg() {
+        System.out.println(">>> debug Work Ctrl");
+        return "success";
+    }
 }
 
 
