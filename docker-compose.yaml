@@ -3,7 +3,7 @@ services:
   app:
     container_name: work-container
     build: .
-    image: chankyuu/springapp:32feb39b52789d43d36f7cdefc55011f0d6313e8
+    # image: chankyuu/springapp:32feb39b52789d43d36f7cdefc55011f0d6313e8
     depends_on:
       - database
     ports:
