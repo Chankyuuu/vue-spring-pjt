@@ -18,5 +18,7 @@ jobs:
         distribution: 'adopt'
 
     # jar file build and permission
-    - name: Build Jar
+    - name: Grant jar
+      run: chmod +x gradlew
+    - name: Build Jar 
       run: ./gradlew build bootJAR
